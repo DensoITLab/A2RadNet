@@ -1,0 +1,28 @@
+{
+  "unit_tests_passed": 6,
+  "checks": {
+    "radial": {
+      "strict_weight_load": true,
+      "state_keys_identical": true,
+      "task_outputs_bitwise_equal": true,
+      "task_batch_fields_equal": true,
+      "training_loss_identical": true,
+      "gradients_finite": true,
+      "batch_fields_before": 8,
+      "batch_fields_after": 5,
+      "backward_gradient_norms_max_absolute_difference": 0.0001220703125
+    },
+    "raddet": {
+      "strict_weight_load": true,
+      "state_keys_identical": true,
+      "task_outputs_bitwise_equal": true,
+      "task_batch_fields_equal": true,
+      "training_loss_identical": true,
+      "gradients_finite": true,
+      "batch_fields_before": 5,
+      "batch_fields_after": 4,
+      "backward_gradient_norms_max_absolute_difference": 0.001953125
+    }
+  },
+  "backward_note": "GPU backward determinism is not enforced; gradient norms are recorded rather than required to be bitwise equal."
+}

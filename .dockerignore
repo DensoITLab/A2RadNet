@@ -1,0 +1,16 @@
+.git
+.venv
+outputs
+dist
+data
+checkpoints
+**/__pycache__
+**/*.pyc
+**/*.ipynb
+.env
+.env.*
+.aws
+.codex
+.agents
+.vscode
+.DS_Store

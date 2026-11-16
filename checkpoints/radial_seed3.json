@@ -1,0 +1,10 @@
+{
+  "dataset": "radial",
+  "seed": 3,
+  "epoch": 118,
+  "sha256": "d1e4eb555d45ed46258d8e3a430c5140bec4c83e6f483b232ac646b849c14626",
+  "source_checkpoint_sha256": "cd9337909eb0dbb2e4cead7d4d3f2fe9515d6299ea5c06ce01c36473a626f695",
+  "config_sha256": "5b4a861243df2e28617f9ace788c40a27fd587c42c22c95964bbb69acd51b24c",
+  "format": "net_state_dict, epoch, seed",
+  "license_status": "Original A2-RadNet code and pretrained models: ITLAB license (non-commercial); see LICENSE"
+}

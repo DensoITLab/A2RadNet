@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or the pretrained models in your research, please cite the paper below."
+type: software
+title: "A2-RadNet: Learning Structured Angle-Aware Representations for Radar Object Detection"
+authors:
+  - family-names: Nagata
+    given-names: Jun
+  - family-names: Ueda
+    given-names: Tatsuya
+  - family-names: Suzuki
+    given-names: Koichiro
+preferred-citation:
+  type: conference-paper
+  title: "Learning Structured Angle-Aware Representations for Radar Object Detection"
+  authors:
+    - family-names: Nagata
+      given-names: Jun
+    - family-names: Ueda
+      given-names: Tatsuya
+    - family-names: Suzuki
+      given-names: Koichiro
+  year: 2026
+  conference:
+    name: "British Machine Vision Conference (BMVC)"

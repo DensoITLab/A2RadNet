@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "a2radnet"
+version = "0.1.0"
+description = "Learning Structured Angle-Aware Representations for Radar Object Detection"
+requires-python = ">=3.9,<3.10"
+authors = [{name = "Jun Nagata"}, {name = "Tatsuya Ueda"}, {name = "Koichiro Suzuki"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+
+[tool.setuptools.packages.find]
+include = ["a2radnet*"]

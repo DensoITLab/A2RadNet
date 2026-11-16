@@ -1,0 +1,12 @@
+{
+  "radial": {
+    "file_count": 1,
+    "sha256": "c18339007f334996b5c235abf25841a521242854e820e74d6e05dc2ecfb593b7",
+    "scheme": "SHA256 of sorted relative POSIX names + NUL + SHA256 bytes per annotation"
+  },
+  "raddet": {
+    "file_count": 10158,
+    "sha256": "8b4ce0dcf1f1969c3c30bedadb0a9aee229b3a1e5921e5ab79debca55b46c0e7",
+    "scheme": "SHA256 of sorted relative POSIX names + NUL + SHA256 bytes per annotation"
+  }
+}

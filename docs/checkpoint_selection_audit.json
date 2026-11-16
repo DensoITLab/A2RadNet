@@ -1,0 +1,46 @@
+{
+  "radial": {
+    "lexicographic_last": {
+      "loaded_epoch": 99,
+      "history_length": 100,
+      "selected_epoch": 98,
+      "F1": 0.985179407176287
+    },
+    "numeric_last": {
+      "loaded_epoch": 149,
+      "history_length": 150,
+      "selected_epoch": 118,
+      "F1": 0.9855750487329434
+    },
+    "ctime_last": {
+      "loaded_epoch": 149,
+      "history_length": 150,
+      "selected_epoch": 118,
+      "F1": 0.9855750487329434
+    },
+    "public_selector_epoch": 118,
+    "historical_evaluation_epoch": 118
+  },
+  "raddet": {
+    "lexicographic_last": {
+      "loaded_epoch": 99,
+      "history_length": 100,
+      "selected_epoch": 70,
+      "F1": 0.7194401924338509
+    },
+    "numeric_last": {
+      "loaded_epoch": 149,
+      "history_length": 150,
+      "selected_epoch": 141,
+      "F1": 0.7278438411487548
+    },
+    "ctime_last": {
+      "loaded_epoch": 149,
+      "history_length": 150,
+      "selected_epoch": 141,
+      "F1": 0.7278438411487548
+    },
+    "public_selector_epoch": 141,
+    "historical_evaluation_epoch": 141
+  }
+}

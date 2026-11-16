@@ -1,0 +1,255 @@
+{
+  "name": "a2radnet_radial_seed3",
+  "seed": 3,
+  "data_mode": "RA",
+  "model": {
+    "window_size": [
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        4
+      ]
+    ],
+    "depths": [
+      2,
+      2,
+      6,
+      2
+    ],
+    "channels": [
+      32,
+      40,
+      48,
+      56
+    ],
+    "patch_size": [
+      2,
+      2
+    ],
+    "merge_sizes": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "upsample_sizes": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "in_chans": 32,
+    "embed_dim": 48,
+    "drop_rates": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "num_heads": [
+      3,
+      6,
+      12,
+      24
+    ],
+    "basic_block_residual": false,
+    "doppler_period": 16,
+    "use_periodic_attention": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "range_window_size": 5,
+    "frontend_type": "MIMO_MLP",
+    "frontend_embed_dim": 128,
+    "frontend_num_blocks": 0,
+    "frontend_out_channels": 112,
+    "frontend_doppler_reducer": 1,
+    "frontend_num_latents": 32,
+    "frontend_dropout": 0.1,
+    "frontend_angle_estimator_type": 1,
+    "freespace_upsample": "bilinear",
+    "DetectionHead": true,
+    "SegmentationHead": true,
+    "frontend_use_cyclic_shift": true,
+    "aae_variant": "doppler_structured"
+  },
+  "label_map": {
+    "detection": [
+      128,
+      112
+    ],
+    "segmentation": [
+      256,
+      224
+    ]
+  },
+  "dataset": {
+    "root_dir": "data/RADIal",
+    "geometry": {
+      "ranges": [
+        512,
+        448,
+        1
+      ],
+      "resolution": [
+        0.201171875,
+        0.2
+      ],
+      "size": 3
+    },
+    "statistics": {
+      "normalization": "channelwise",
+      "input_global_scale": 42917.72570990812,
+      "input_mean": [
+        -0.0026244,
+        -0.21335,
+        0.018789,
+        -1.4427,
+        -0.37618,
+        1.3594,
+        -0.22987,
+        0.12244,
+        1.7359,
+        -0.65345,
+        0.37976,
+        5.5521,
+        0.77462,
+        -1.5589,
+        -0.72473,
+        1.5182,
+        -0.37189,
+        -0.088332,
+        -0.16194,
+        1.0984,
+        0.99929,
+        -1.0495,
+        1.9972,
+        0.92869,
+        1.8991,
+        -0.23772,
+        2.0,
+        0.77737,
+        1.3239,
+        1.1817,
+        -0.69696,
+        0.44288
+      ],
+      "input_std": [
+        20775.3809,
+        23085.5,
+        23017.6387,
+        14548.6357,
+        32133.5547,
+        28838.8047,
+        27195.8945,
+        33103.7148,
+        32181.5273,
+        35022.1797,
+        31259.1895,
+        36684.6133,
+        33552.9258,
+        25958.7539,
+        29532.623,
+        32646.8984,
+        20728.332,
+        23160.8828,
+        23069.0449,
+        14915.9053,
+        32149.6172,
+        28958.584,
+        27210.8652,
+        33005.6602,
+        31905.9336,
+        35124.918,
+        31258.4316,
+        31086.0273,
+        33628.5352,
+        25950.2363,
+        29445.2598,
+        32885.7422
+      ],
+      "reg_mean": [
+        0.40480944,
+        -0.37837453
+      ],
+      "reg_std": [
+        0.69685996,
+        0.69395025
+      ]
+    }
+  },
+  "losses": {
+    "fct": "PixorLoss",
+    "classification": "FocalLoss",
+    "regression": "smoothL1Loss",
+    "weight": [
+      2,
+      100,
+      100
+    ]
+  },
+  "lr_scheduler": {
+    "step_size": 10,
+    "gamma": 0.9
+  },
+  "asam": {
+    "rho": 0.5,
+    "eta": 0.01
+  },
+  "optimizer": {
+    "lr": 0.0001
+  },
+  "num_epochs": 150,
+  "dataloader": {
+    "mode": "sequence",
+    "split": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "train": {
+      "batch_size": 4,
+      "num_workers": 0
+    },
+    "val": {
+      "batch_size": 4,
+      "num_workers": 0
+    },
+    "test": {
+      "batch_size": 1,
+      "num_workers": 0
+    }
+  },
+  "output": {
+    "dir": "outputs/radial"
+  },
+  "dataset_name": "radial"
+}

@@ -1,0 +1,10 @@
+{
+  "dataset": "raddet",
+  "seed": 3,
+  "epoch": 141,
+  "sha256": "19d8d823e8837f45356a02b9447ffce06d304e8810debb591128b06a754f44b9",
+  "source_checkpoint_sha256": "087152e2b6b1f156691fe599414f4cf165fd412d97230c62f741ff405d2a2377",
+  "config_sha256": "271da9e1bf61043158b938d1289b6eb229050e1992d56f2546afeda906262abe",
+  "format": "net_state_dict, epoch, seed",
+  "license_status": "Original A2-RadNet code and pretrained models: ITLAB license (non-commercial); see LICENSE"
+}

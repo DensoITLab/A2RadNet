@@ -1,0 +1,22 @@
+A2-RadNet accompanies "Learning Structured Angle-Aware Representations for
+Radar Object Detection" by Jun Nagata, Tatsuya Ueda and Koichiro Suzuki,
+DENSO IT Laboratory, BMVC 2026.
+
+This implementation derives from the local research implementation built on
+T-FFTRadNet (https://github.com/jgiroux8/T_FFTRadNet), which in turn credits
+FFTRadNet/RADIal (https://github.com/valeoai/RADIal).
+The Swin backbone retains the Microsoft copyright notice; its MIT license
+is reproduced in LICENSES/Swin-Transformer-MIT.txt.
+
+Changes include the Angle-Aware Encoder and RPA processing, anisotropic
+Swin windows and merging, dataset-specific decoders, standalone package
+imports, explicit execution paths, and reproducibility tooling.
+Local source-file provenance is recorded in docs/source_manifest.json.
+
+Original A2-RadNet contributions and the provided pretrained models are licensed
+under the ITLAB license for non-commercial use; see LICENSE.
+Copyright (C) 2026 Denso IT Laboratory, Inc. All Rights Reserved.
+
+Inherited components retain their respective terms and notices. The ITLAB license
+does not replace the Microsoft MIT license or establish rights to third-party
+code or datasets. See docs/licensing.md.
